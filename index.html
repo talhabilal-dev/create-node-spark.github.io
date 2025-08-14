@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      create-node-spark - The Fastest Way to Scaffold Node.js Backends | CLI
+      Tool
+    </title>
+    <meta
+      name="description"
+      content="create-node-spark is a powerful CLI tool for scaffolding production-ready Node.js backend projects. Zero configuration, TypeScript ready, multiple databases, and developer-friendly. Get started in seconds!"
+    />
+    <meta
+      name="keywords"
+      content="create-node-spark, Node.js CLI, backend scaffolding, REST API generator, TypeScript, Express.js, MongoDB, MySQL, npm package, developer tools, Node.js boilerplate"
+    />
+    <meta name="author" content="talhabilaldev" />
+    <link rel="canonical" href="https://create-node-spark.dev/" />
+    <meta name="robots" content="index, follow" />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="create-node-spark - The Fastest Way to Scaffold Node.js Backends"
+    />
+    <meta
+      property="og:description"
+      content="Zero configuration CLI tool for production-ready Node.js backends. TypeScript ready, multiple databases, Express.js integration."
+    />
+    <meta property="og:url" content="https://create-node-spark.dev/" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dvdktrhsz/image/upload/v1755154754/2025-08-1410-59-54-ezgif.com-video-to-gif-converter_afyoyo.gif"
+    />
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="create-node-spark - The Fastest Way to Scaffold Node.js Backends"
+    />
+    <meta
+      name="twitter:description"
+      content="Zero configuration CLI tool for production-ready Node.js backends. TypeScript ready, multiple databases, Express.js integration."
+    />
+    <meta
+      name="twitter:image"
+      content="https://res.cloudinary.com/dvdktrhsz/image/upload/v1755154754/2025-08-1410-59-54-ezgif.com-video-to-gif-converter_afyoyo.gif"
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Accessibility: Language -->
+    <meta http-equiv="content-language" content="en" />
+
+    <!-- Structured Data for better SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "create-node-spark",
+        "description": "A powerful CLI tool for scaffolding production-ready Node.js backend projects with zero configuration",
+        "url": "https://create-node-spark.dev",
+        "author": {
+          "@type": "Person",
+          "name": "talhabilaldev",
+          "url": "https://github.com/talhabilal-dev"
+        },
+        "operatingSystem": "Cross-platform",
+        "applicationCategory": "DeveloperApplication",
+        "downloadUrl": "https://www.npmjs.com/package/create-node-spark",
+        "softwareVersion": "latest",
+        "programmingLanguage": ["JavaScript", "TypeScript"],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "keywords": "Node.js, CLI, backend, scaffolding, REST API, TypeScript, Express, MongoDB, MySQL"
+      }
+    </script>
+
+    <!-- Additional meta tags for better indexing -->
+    <meta name="application-name" content="create-node-spark" />
+    <meta name="theme-color" content="#667eea" />
+    <meta name="msapplication-navbutton-color" content="#667eea" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="#667eea" />
+
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style" />
+    <link
+      rel="preload"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      as="style"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" aria-label="Main Navigation">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-bolt"></i>
+          create-node-spark
+        </div>
+        <ul class="nav-links">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#installation">Install</a></li>
+          <li><a href="#roadmap">Roadmap</a></li>
+          <li>
+            <a
+              href="https://github.com/talhabilal-dev/create-node-spark"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="particles" id="particles"></div>
+      <div class="hero-content">
+        <h1>🚀 create-node-spark</h1>
+        <h2 class="hero-subtitle">
+          The fastest way to scaffold production-ready Node.js backends
+        </h2>
+        <p class="hero-description">
+          Zero configuration • TypeScript ready • Multiple databases •
+          Developer-friendly • Get from idea to coding in under 30 seconds
+        </p>
+
+        <div class="code-example" role="img" aria-label="Installation command">
+          <code>$ npx create-node-spark@latest</code>
+        </div>
+
+        <div class="cta-buttons">
+          <a
+            href="#installation"
+            class="btn btn-primary"
+            aria-label="Start using create-node-spark"
+          >
+            <i class="fas fa-download" aria-hidden="true"></i>
+            Get Started Now
+          </a>
+          <a
+            href="https://github.com/talhabilal-dev/create-node-spark"
+            class="btn btn-secondary"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View create-node-spark source code on GitHub"
+          >
+            <i class="fab fa-github" aria-hidden="true"></i>
+            View on GitHub
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="container">
+        <h2 class="section-title fade-in">✨ Why Choose create-node-spark?</h2>
+        <p class="section-subtitle fade-in">
+          Built specifically for Node.js backend development with modern best
+          practices. Trusted by developers worldwide for rapid prototyping and
+          production-ready applications.
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card fade-in">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">Lightning Fast</h3>
+            <p class="feature-description">
+              Get from idea to coding in under 30 seconds. No more hours spent
+              on project setup and configuration.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">🎯</div>
+            <h3 class="feature-title">Backend Focused</h3>
+            <p class="feature-description">
+              Built specifically for Node.js backend development with REST API
+              best practices out of the box.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">🔧</div>
+            <h3 class="feature-title">Highly Configurable</h3>
+            <p class="feature-description">
+              Choose your stack: TypeScript/JavaScript, npm/pnpm,
+              MongoDB/MySQL/PostgreSQL, and more.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">📦</div>
+            <h3 class="feature-title">Lightweight</h3>
+            <p class="feature-description">
+              Minimal dependencies keep your projects fast and maintainable.
+              Only essential tools included.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">🏗️</div>
+            <h3 class="feature-title">Production Ready</h3>
+            <p class="feature-description">
+              Professional folder structure and configurations from day one. No
+              refactoring needed.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">🌱</div>
+            <h3 class="feature-title">Future Proof</h3>
+            <p class="feature-description">
+              Regular updates and new features based on community feedback and
+              modern standards.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">🗄️</div>
+            <h3 class="feature-title">Database Ready</h3>
+            <p class="feature-description">
+              MongoDB with Mongoose, MySQL with Knex.js, and PostgreSQL with
+              Prisma support.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">📁</div>
+            <h3 class="feature-title">Smart Structure</h3>
+            <p class="feature-description">
+              Organized folder structure with controllers, models, routes,
+              middleware, and services separation.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">🛠️</div>
+            <h3 class="feature-title">Developer Tools</h3>
+            <p class="feature-description">
+              Optional ESLint, Prettier, file upload with Multer, and
+              environment variable setup.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item fade-in">
+            <span class="stat-number" data-target="30">0</span>
+            <span class="stat-label">Seconds to Setup</span>
+          </div>
+          <div class="stat-item fade-in">
+            <span class="stat-number" data-target="2">0</span>
+            <span class="stat-label">Database Options</span>
+          </div>
+          <div class="stat-item fade-in">
+            <span class="stat-number" data-target="2">0</span>
+            <span class="stat-label">Languages Supported</span>
+          </div>
+          <div class="stat-item fade-in">
+            <span class="stat-number" data-target="100">0</span>
+            <span class="stat-label">% Open Source</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Roadmap Section -->
+    <section class="roadmap" id="roadmap">
+      <div class="container">
+        <h2 class="section-title fade-in">🛣️ Development Roadmap</h2>
+        <p class="section-subtitle fade-in">
+          See what's completed, in progress, and planned for the future
+        </p>
+
+        <div class="phase phase-completed fade-in">
+          <h3 class="phase-title">
+            <i class="fas fa-check-circle"></i>
+            Phase 1 - COMPLETED
+          </h3>
+          <div class="phase-items">
+            <div class="phase-item">✅ JavaScript & TypeScript Support</div>
+            <div class="phase-item">✅ npm & pnpm Package Managers</div>
+            <div class="phase-item">✅ Express.js Framework</div>
+            <div class="phase-item">✅ MongoDB & MySQL Integration</div>
+            <div class="phase-item">✅ ESLint & Prettier Setup</div>
+            <div class="phase-item">✅ Multer File Upload</div>
+            <div class="phase-item">✅ ESM Module Support</div>
+            <div class="phase-item">✅ Environment Configuration</div>
+          </div>
+        </div>
+
+        <div class="phase phase-progress fade-in">
+          <h3 class="phase-title">
+            <i class="fas fa-cog fa-spin"></i>
+            Phase 2 - IN PROGRESS
+          </h3>
+          <div class="phase-items">
+            <div class="phase-item">🔄 PostgreSQL + Prisma Integration</div>
+            <div class="phase-item">🔄 Fastify Framework Support</div>
+            <div class="phase-item">🔄 Enhanced Project Customization</div>
+            <div class="phase-item">🔄 Template System</div>
+            <div class="phase-item">🔄 Automated Testing Setup</div>
+          </div>
+        </div>
+
+        <div class="phase phase-planned fade-in">
+          <h3 class="phase-title">
+            <i class="fas fa-rocket"></i>
+            Phase 3 - PLANNED
+          </h3>
+          <div class="phase-items">
+            <div class="phase-item">📋 GraphQL API Support</div>
+            <div class="phase-item">🐳 Docker Integration</div>
+            <div class="phase-item">🔄 CI/CD Templates</div>
+            <div class="phase-item">🔌 Plugin System</div>
+            <div class="phase-item">🏗️ Industry Templates</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Installation Section -->
+    <section class="installation" id="installation">
+      <div class="container">
+        <h2 class="section-title fade-in" style="color: white">
+          📦 Installation Methods
+        </h2>
+        <p
+          class="section-subtitle fade-in"
+          style="color: rgba(255, 255, 255, 0.8)"
+        >
+          Choose the installation method that works best for you
+        </p>
+
+        <div class="installation-methods">
+          <div class="method-card fade-in">
+            <h3 class="method-title">📱 NPX (Recommended)</h3>
+            <div class="method-code">
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              <code>npx create-node-spark@latest</code>
+            </div>
+            <p>
+              ✅ Always uses the latest version<br />
+              ✅ No global installation required<br />
+              ✅ Perfect for one-time usage
+            </p>
+          </div>
+
+          <div class="method-card fade-in">
+            <h3 class="method-title">🌍 Global Installation</h3>
+            <div class="method-code">
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              <code
+                >npm install -g create-node-spark<br />create-node-spark</code
+              >
+            </div>
+            <p>
+              ✅ Available from anywhere<br />
+              ✅ Faster subsequent usage<br />
+              ✅ Ideal for frequent use
+            </p>
+          </div>
+
+          <div class="method-card fade-in">
+            <h3 class="method-title">🔧 Development Setup</h3>
+            <div class="method-code">
+              <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+              <code
+                >git clone
+                https://github.com/talhabilal-dev/create-node-spark.git<br />cd
+                create-node-spark<br />npm install && npm link</code
+              >
+            </div>
+            <p>
+              ✅ Full source code access<br />
+              ✅ Contributing ready<br />
+              ✅ Latest development features
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Use Cases Section -->
+    <section class="features" style="background: #f8fafc">
+      <div class="container">
+        <h2 class="section-title fade-in">🎯 Perfect For</h2>
+        <p class="section-subtitle fade-in">
+          create-node-spark is ideal for various development scenarios and team
+          sizes
+        </p>
+
+        <div class="features-grid">
+          <div class="feature-card fade-in">
+            <div class="feature-icon">🚀</div>
+            <h3 class="feature-title">Rapid Prototyping</h3>
+            <p class="feature-description">
+              Build MVP backends quickly without spending hours on setup.
+              Perfect for hackathons and proof-of-concepts.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">👨‍💻</div>
+            <h3 class="feature-title">Solo Developers</h3>
+            <p class="feature-description">
+              Get industry-standard project structure without the complexity.
+              Focus on features, not configuration.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">🏢</div>
+            <h3 class="feature-title">Enterprise Teams</h3>
+            <p class="feature-description">
+              Ensure consistent project structure across teams. Onboard new
+              developers faster with familiar patterns.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">📚</div>
+            <h3 class="feature-title">Learning Projects</h3>
+            <p class="feature-description">
+              Start with production-ready code structure. Learn best practices
+              from day one with real-world examples.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">🔄</div>
+            <h3 class="feature-title">API-First Development</h3>
+            <p class="feature-description">
+              REST API ready setup with proper routing, middleware, and database
+              integration from the start.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">Microservices</h3>
+            <p class="feature-description">
+              Create multiple services quickly with consistent structure.
+              Perfect for microservice architectures.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a
+            href="https://github.com/talhabilal-dev/create-node-spark"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="create-node-spark GitHub repository"
+            >GitHub</a
+          >
+          <a
+            href="https://www.npmjs.com/package/create-node-spark"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="create-node-spark npm package"
+            >npm Package</a
+          >
+          <a
+            href="https://github.com/talhabilal-dev/create-node-spark/issues"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Report issues and bugs"
+            >Issues</a
+          >
+          <a
+            href="https://github.com/talhabilal-dev/create-node-spark/discussions"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Community discussions"
+            >Discussions</a
+          >
+          <a
+            href="mailto:contact@talhabilal.dev"
+            aria-label="Contact create-node-spark developer"
+            >Contact</a
+          >
+          <a
+            href="https://github.com/talhabilal-dev/create-node-spark/blob/main/CHANGELOG.md"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View changelog"
+            >Changelog</a
+          >
+        </div>
+        <p>
+          &copy; 2025 create-node-spark. Made with ❤️ by developers, for
+          developers. Open source CLI tool for Node.js backend scaffolding.
+        </p>
+        <p>
+          Licensed under MIT License • npm downloads:
+          <a
+            href="https://www.npmjs.com/package/create-node-spark"
+            target="_blank"
+            rel="noopener noreferrer"
+            >View Package Stats</a
+          >
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
