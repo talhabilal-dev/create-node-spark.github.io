@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Changelog - create-node-spark | Version History</title>
+    <meta
+      name="description"
+      content="Complete changelog and version history for create-node-spark - Track all features, improvements, and bug fixes."
+    />
+    <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .changelog-container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 8rem 2rem 4rem;
+      }
+
+      .changelog-header {
+        text-align: center;
+        margin-bottom: 4rem;
+      }
+
+      .changelog-header h1 {
+        font-size: 3rem;
+        color: #2d3748;
+        margin-bottom: 1rem;
+      }
+
+      .changelog-header p {
+        font-size: 1.2rem;
+        color: #718096;
+      }
+
+      .version-block {
+        background: white;
+        border-radius: 15px;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        border-left: 4px solid #667eea;
+      }
+
+      .version-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 1.5rem;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+
+      .version-number {
+        font-size: 1.8rem;
+        font-weight: 700;
+        color: #667eea;
+      }
+
+      .version-date {
+        font-size: 1rem;
+        color: #718096;
+        background: #edf2f7;
+        padding: 0.5rem 1rem;
+        border-radius: 20px;
+      }
+
+      .version-section {
+        margin-bottom: 1.5rem;
+      }
+
+      .section-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+      }
+
+      .section-title.added {
+        color: #48bb78;
+      }
+      .section-title.changed {
+        color: #4299e1;
+      }
+      .section-title.fixed {
+        color: #ed8936;
+      }
+      .section-title.improved {
+        color: #9f7aea;
+      }
+
+      .changelog-list {
+        list-style: none;
+        padding-left: 0;
+      }
+
+      .changelog-list li {
+        padding: 0.5rem 0;
+        padding-left: 1.5rem;
+        position: relative;
+        color: #4a5568;
+        line-height: 1.6;
+      }
+
+      .changelog-list li::before {
+        content: "•";
+        position: absolute;
+        left: 0;
+        color: #667eea;
+        font-weight: bold;
+      }
+
+      .changelog-list li strong {
+        color: #2d3748;
+      }
+
+      .changelog-list ul {
+        margin-top: 0.5rem;
+        list-style: none;
+        padding-left: 1rem;
+      }
+
+      .changelog-list ul li::before {
+        content: "→";
+      }
+
+      .badge {
+        display: inline-block;
+        padding: 0.25rem 0.75rem;
+        border-radius: 12px;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin-left: 0.5rem;
+      }
+
+      .badge-new {
+        background: #48bb78;
+        color: white;
+      }
+
+      .badge-breaking {
+        background: #f56565;
+        color: white;
+      }
+
+      .badge-major {
+        background: #667eea;
+        color: white;
+      }
+
+      code {
+        background: #edf2f7;
+        padding: 0.2rem 0.5rem;
+        border-radius: 4px;
+        font-family: "Monaco", "Menlo", monospace;
+        font-size: 0.9rem;
+        color: #667eea;
+      }
+
+      .roadmap-link {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+        padding: 1.5rem;
+        border-radius: 15px;
+        text-align: center;
+        margin-top: 3rem;
+      }
+
+      .roadmap-link h3 {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .roadmap-link a {
+        color: white;
+        text-decoration: underline;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animated-bg"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">
+          <i class="fas fa-bolt"></i>
+          create-node-spark
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="changelog.html" class="active">Changelog</a></li>
+          <li>
+            <a
+              href="https://github.com/talhabilal-dev/create-node-spark"
+              target="_blank"
+              >GitHub</a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Changelog Content -->
+    <div class="changelog-container">
+      <div class="changelog-header">
+        <h1>📋 Changelog</h1>
+        <p>All notable changes to create-node-spark are documented here</p>
+        <p style="color: #667eea; font-weight: 600; margin-top: 1rem">
+          Current Version: 2.7.1
+        </p>
+      </div>
+
+      <!-- Version 2.7.1 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number">v2.7.1</span>
+          <span class="version-date">February 13, 2026</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title fixed">🐛 Fixed</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>Features Prompt Not Appearing</strong>
+              <ul>
+                <li>
+                  Fixed issue where features selection prompt (ESLint, Multer,
+                  Docker) was not appearing in interactive mode
+                </li>
+                <li>
+                  Root cause: <code>createProjectDetailsFromFlags</code> was
+                  always creating an empty features array
+                </li>
+                <li>
+                  This empty array was treated as "features are already
+                  configured", preventing interactive prompt
+                </li>
+                <li>
+                  Solution: Only include <code>features</code> property when
+                  feature flags are explicitly set
+                </li>
+                <li>
+                  Updated <code>src/utils/cliArgs.ts</code> to conditionally
+                  include features
+                </li>
+                <li>
+                  Now interactive mode properly shows all three feature options
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 2.7.0 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number"
+            >v2.7.0 <span class="badge badge-major">MAJOR</span></span
+          >
+          <span class="version-date">February 13, 2026</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>Docker Containerization Support</strong>
+              <span class="badge badge-new">NEW</span>
+              <ul>
+                <li>
+                  Full Docker integration with production-ready multi-stage
+                  builds
+                </li>
+                <li>
+                  Automatic generation of optimized
+                  <code>Dockerfile</code> based on language and framework
+                </li>
+                <li>
+                  Development <code>Dockerfile.dev</code> with hot-reload
+                  support
+                </li>
+                <li>
+                  Comprehensive <code>.dockerignore</code> for optimized image
+                  sizes
+                </li>
+                <li>
+                  <code>docker-compose.yml</code> generation for database
+                  integration (MongoDB, MySQL, PostgreSQL)
+                </li>
+                <li>
+                  Docker-specific npm/pnpm scripts in package.json:
+                  <ul>
+                    <li>
+                      <code>docker:build</code> - Build production Docker image
+                    </li>
+                    <li><code>docker:run</code> - Run production container</li>
+                    <li>
+                      <code>docker:dev</code> - Run development container with
+                      volume mounting
+                    </li>
+                    <li>
+                      <code>docker:up</code> - Start docker-compose services
+                    </li>
+                    <li>
+                      <code>docker:down</code> - Stop docker-compose services
+                    </li>
+                    <li><code>docker:logs</code> - View container logs</li>
+                  </ul>
+                </li>
+                <li>
+                  Security best practices: non-root user execution, multi-stage
+                  builds, health checks
+                </li>
+                <li>
+                  CLI support: <code>--docker</code> flag and interactive prompt
+                  option
+                </li>
+                <li>
+                  Database containers with health checks and persistent volumes
+                </li>
+                <li>Network isolation and proper service dependencies</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Changed CLI color scheme</strong> for better visual
+              experience
+            </li>
+          </ul>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title changed">🛠 Changed</h3>
+          <ul class="changelog-list">
+            <li>Updated package.json version to 2.7.0</li>
+            <li>
+              Enhanced keywords for better npm discoverability (docker,
+              containerization, etc.)
+            </li>
+            <li>Modified project step counting to include Docker setup</li>
+            <li>Extended feature selection in interactive prompts</li>
+          </ul>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title improved">✨ Improved</h3>
+          <ul class="changelog-list">
+            <li>
+              Better separation of development and production Docker
+              configurations
+            </li>
+            <li>Optimized Docker images with layer caching</li>
+            <li>
+              Automatic environment variable configuration for containerized
+              databases
+            </li>
+            <li>Alpine-based images for smaller footprint</li>
+            <li>Volume mounting for development to enable hot-reload</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 2.6.1 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number">v2.6.1</span>
+          <span class="version-date">October 27, 2025</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title fixed">🐛 Fixed</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>Project Name Validation Consistency:</strong> Fixed
+              inconsistency between prompt and CLI flag validation patterns
+            </li>
+            <li>
+              <strong>Async File Operations:</strong> Added missing
+              <code>await</code> keywords to <code>writeFile</code> operations
+            </li>
+            <li>
+              <strong>TypeScript Type Safety:</strong> Replaced
+              <code>any</code> type with proper
+              <code>EnvironmentConfig</code> interface
+            </li>
+            <li>
+              <strong>Fastify Route Generation for PostgreSQL:</strong> Fixed
+              PostgreSQL + Fastify projects generating Express-style routes
+            </li>
+            <li>
+              <strong>Silent Mode Implementation:</strong> Fixed
+              <code>--silent</code> flag not suppressing all non-error output
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 2.6.0 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number"
+            >v2.6.0 <span class="badge badge-major">MAJOR</span></span
+          >
+          <span class="version-date">October 2025</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>CLI Flags System</strong>
+              <span class="badge badge-new">NEW</span>
+              <ul>
+                <li>
+                  Project configuration: <code>--name</code>,
+                  <code>--lang</code>, <code>--framework</code>,
+                  <code>--db</code>, <code>--pm</code>
+                </li>
+                <li>
+                  Feature flags: <code>--eslint</code>, <code>--multer</code>,
+                  <code>--no-eslint</code>, <code>--no-multer</code>
+                </li>
+                <li>
+                  Utility flags: <code>--yes</code>, <code>--verbose</code>,
+                  <code>--silent</code>
+                </li>
+                <li>
+                  Help & version: <code>--help</code>, <code>--version</code>
+                </li>
+                <li>Hybrid mode: mix flags with prompts</li>
+                <li>Full CI/CD scripting support</li>
+              </ul>
+            </li>
+            <li>
+              <strong>Fastify Framework Support</strong>
+              <span class="badge badge-new">NEW</span>
+              <ul>
+                <li>Full Fastify integration with TypeScript and JavaScript</li>
+                <li>Database integration: MongoDB, MySQL, and PostgreSQL</li>
+                <li>
+                  API route generation for PostgreSQL projects with Prisma
+                </li>
+                <li>Modern Fastify v5+ patterns with logger enabled</li>
+                <li>
+                  Host binding configuration for containerized deployments
+                </li>
+              </ul>
+            </li>
+            <li>
+              <strong>PostgreSQL + Prisma Integration</strong>
+              <span class="badge badge-new">NEW</span>
+              <ul>
+                <li>Full PostgreSQL support with Prisma ORM</li>
+                <li>
+                  Pre-configured <code>prisma/schema.prisma</code> with User and
+                  Post models
+                </li>
+                <li>Service layer with CRUD operations</li>
+                <li>API controllers and route integration</li>
+                <li>
+                  Environment configuration: <code>DATABASE_URL</code> support
+                </li>
+                <li>TypeScript support with Prisma-generated types</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title changed">🛠 Changed</h3>
+          <ul class="changelog-list">
+            <li>
+              Enhanced prompts to work with partial flag-based configuration
+            </li>
+            <li>
+              Modified <code>setupEnv</code> to generate DB-specific environment
+              configs
+            </li>
+            <li>.env files now only include variables for selected database</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 2.5.0 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number">v2.5.0</span>
+          <span class="version-date">2025</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>Package Manager Selection:</strong> Users can choose
+              between npm and pnpm
+            </li>
+            <li>
+              <strong>Directory Existence Check:</strong> Prevents overwriting
+              existing projects
+            </li>
+            <li>
+              <strong>Enhanced Project Setup Flow:</strong> Improved prompts and
+              validation
+            </li>
+          </ul>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title changed">🛠 Changed</h3>
+          <ul class="changelog-list">
+            <li>
+              All package installations now respect chosen package manager
+            </li>
+            <li>Generated scripts use appropriate package manager commands</li>
+            <li>Setup tasks use selected package manager consistently</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 2.4.1 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number">v2.4.1</span>
+          <span class="version-date">2025</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>Developer-Friendly ESLint Configuration:</strong> Balanced
+              rules for productivity
+            </li>
+            <li>
+              <strong>TypeScript-Specific Linting:</strong> Added
+              <code>typescript-eslint</code>
+            </li>
+            <li>
+              <strong>Prettier Integration:</strong> Consistent code formatting
+            </li>
+            <li>
+              <strong>Multiple Lint Scripts:</strong> <code>lint</code>,
+              <code>lint:fix</code>, <code>format</code>,
+              <code>format:check</code>
+            </li>
+            <li>
+              <strong>Smart Ignore Patterns:</strong> Comprehensive
+              <code>.eslintignore</code>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 2.4.0 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number"
+            >v2.4.0 <span class="badge badge-major">MAJOR</span></span
+          >
+          <span class="version-date">2025</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title changed">🛠 Changed</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>Major TypeScript Migration:</strong> Complete conversion
+              from JavaScript to TypeScript
+            </li>
+            <li>Enhanced type safety with comprehensive type definitions</li>
+            <li>Updated build system to compile TypeScript to JavaScript</li>
+            <li>Enhanced compiler settings for production</li>
+          </ul>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>
+              Created <code>types/index.ts</code> with project-wide type
+              definitions
+            </li>
+            <li>
+              Enhanced <code>tsconfig.json</code> with production-ready
+              configuration
+            </li>
+            <li>
+              New npm scripts: <code>clean</code>, <code>prepublishOnly</code>
+            </li>
+            <li>
+              <strong>Interactive CLI Experience:</strong> Beautiful ASCII art
+              logo
+            </li>
+            <li>
+              <strong>Enhanced Color Scheme:</strong> 16+ color combinations
+            </li>
+            <li>
+              <strong>Visual Feedback System:</strong> Progress tracking and
+              status updates
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 2.3.0 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number">v2.3.0</span>
+          <span class="version-date">2025</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>MySQL Database Support:</strong> Full integration with
+              Knex.js
+            </li>
+            <li>Database selection between MongoDB, MySQL, or none</li>
+            <li>
+              <code>knex</code> and <code>mysql2</code> packages for connection
+              management
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 2.2.0 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number">v2.2.0</span>
+          <span class="version-date">2024</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>Multiple File Upload Support:</strong> Multer integration
+            </li>
+            <li>Enhanced public folder structure with organized directories</li>
+            <li>
+              New <code>/services</code> folder for business logic separation
+            </li>
+            <li>New <code>/utils</code> folder for utility functions</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 2.1.0 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number">v2.1.0</span>
+          <span class="version-date">2024</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>Database selection option during project scaffolding</li>
+            <li>
+              Smart database bootstrapping with connection-dependent server
+              startup
+            </li>
+            <li>
+              Dedicated environment configuration file
+              (<code>config/env.config.js</code>)
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 2.0.0 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number"
+            >v2.0.0 <span class="badge badge-breaking">BREAKING</span></span
+          >
+          <span class="version-date">2024</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>TypeScript Support:</strong> Choose between JavaScript or
+              TypeScript
+            </li>
+            <li>
+              "None" framework option using native Node.js
+              <code>http</code> module
+            </li>
+            <li>Improved CLI prompts with enhanced terminal UI</li>
+          </ul>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title changed">🛠 Changed</h3>
+          <ul class="changelog-list">
+            <li><strong>Breaking:</strong> Removed built-in authentication</li>
+            <li>
+              <strong>Breaking:</strong> Removed automatic Multer installation
+            </li>
+            <li>Focused on clean, minimal scaffolding approach</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 1.1.0 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number">v1.1.0</span>
+          <span class="version-date">2024</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>ESLint integration option for code quality</li>
+            <li>Comprehensive folder structure with organized directories</li>
+            <li>Better project organization and scalability</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Version 1.0.0 -->
+      <div class="version-block">
+        <div class="version-header">
+          <span class="version-number"
+            >v1.0.0 <span class="badge badge-major">INITIAL</span></span
+          >
+          <span class="version-date">2024</span>
+        </div>
+
+        <div class="version-section">
+          <h3 class="section-title added">🚀 Added</h3>
+          <ul class="changelog-list">
+            <li>
+              <strong>Initial Release:</strong> First public version of
+              create-node-spark
+            </li>
+            <li>JavaScript project scaffolding support</li>
+            <li>Express server setup with basic configuration</li>
+            <li>Built-in authentication setup</li>
+            <li>Multer integration for file uploads</li>
+            <li>Basic project structure generation</li>
+            <li>Command-line interface for interactive project creation</li>
+            <li>Automated dependency installation</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Roadmap Link -->
+      <div class="roadmap-link">
+        <h3>🚀 What's Next?</h3>
+        <p>
+          Check out our <a href="index.html#roadmap">Development Roadmap</a> to
+          see what features are coming in future releases!
+        </p>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="index.html">Home</a>
+          <a href="docs.html">Documentation</a>
+          <a href="changelog.html">Changelog</a>
+          <a
+            href="https://github.com/talhabilal-dev/create-node-spark"
+            target="_blank"
+            >GitHub</a
+          >
+          <a
+            href="https://www.npmjs.com/package/create-node-spark"
+            target="_blank"
+            >npm</a
+          >
+          <a href="mailto:contact@talhabilal.dev">Contact</a>
+        </div>
+        <p>
+          &copy; 2025 create-node-spark. Made with ❤️ by developers, for
+          developers.
+        </p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

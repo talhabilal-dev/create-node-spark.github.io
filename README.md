@@ -1,27 +1,66 @@
-# create-node-spark Website
+# create-node-spark Documentation Website
 
-This is the official website for **create-node-spark**, a powerful CLI tool for scaffolding production-ready Node.js backend projects.
+This is the official documentation website for **create-node-spark**, a powerful CLI tool for scaffolding production-ready Node.js backend projects.
 
 ## 🚀 About create-node-spark
 
 create-node-spark is a zero-configuration CLI tool that helps developers scaffold modern Node.js backend projects in seconds. It supports:
 
 - **Languages**: JavaScript & TypeScript
-- **Frameworks**: Express.js & Fastify (coming soon)
-- **Databases**: MongoDB, MySQL, PostgreSQL (with Prisma)
+- **Frameworks**: Express.js, Fastify, or vanilla Node.js
+- **Databases**: MongoDB, MySQL, PostgreSQL (with Prisma ORM)
+- **Docker**: Full containerization support with multi-stage builds
 - **Features**: ESLint, Prettier, Multer file uploads, Environment setup
 - **Package Managers**: npm & pnpm
+- **CLI Flags**: Full automation support for CI/CD pipelines
+
+**Latest Version**: 2.7.1 (February 13, 2026)
 
 ## 📁 Project Structure
 
 ```
-├── index.html          # Main HTML file with SEO optimizations
+├── index.html          # Main homepage with overview
+├── docs.html           # Complete documentation and guide
+├── changelog.html      # Full version history
 ├── styles.css          # Responsive CSS with animations
 ├── script.js           # Interactive JavaScript features
 ├── robots.txt          # Search engine crawler instructions
 ├── sitemap.xml         # Site structure for search engines
 └── README.md          # This file
 ```
+
+## 📖 Website Pages
+
+### 1. Homepage (index.html)
+
+- Hero section with quick start
+- Feature overview
+- CLI flags examples
+- Docker support showcase
+- Development roadmap
+- Installation methods
+- Use cases
+
+### 2. Documentation (docs.html)
+
+- Complete getting started guide
+- Installation methods
+- Usage examples
+- CLI flags reference
+- Framework comparison
+- Database integration guides
+- Docker support documentation
+- Project structure explanation
+- Configuration details
+- FAQ section
+
+### 3. Changelog (changelog.html)
+
+- Version history from 1.0.0 to 2.7.1
+- Detailed feature additions
+- Bug fixes documentation
+- Breaking changes notices
+- Improvement highlights
 
 ## 🔍 SEO Features
 
@@ -41,7 +80,7 @@ This website is optimized for search engines with:
 - ✅ Proper heading hierarchy (h1, h2, h3)
 - ✅ Alt text for images and aria-labels for accessibility
 - ✅ Robots.txt for crawler guidance
-- ✅ XML sitemap for search engines
+- ✅ XML sitemap for search engines (includes all pages)
 - ✅ Fast loading with optimized assets
 
 ### Content Optimization
@@ -51,6 +90,54 @@ This website is optimized for search engines with:
 - ✅ Features and benefits clearly explained
 - ✅ Use cases and target audience defined
 - ✅ Installation instructions and code examples
+
+## 📚 Documentation Files
+
+### Website Pages
+
+- **index.html** - Main homepage with overview
+- **docs.html** - Complete documentation and usage guide
+- **changelog.html** - Full version history
+
+### Reference Guides
+
+- **QUICK_REFERENCE.md** - Quick reference for CLI flags and commands
+- **FEATURES_GUIDE.md** - Comprehensive feature documentation
+- **README.md** - This file (website documentation)
+
+## 🎨 Features
+
+### Homepage (index.html)
+
+- Interactive hero section
+- Feature showcase
+- CLI flags examples
+- Docker support section
+- Development roadmap
+- Quick start guide
+- Use cases
+
+### Documentation (docs.html)
+
+- Searchable sidebar navigation
+- Getting started guide
+- Complete CLI flags reference
+- Framework comparisons
+- Database integration guides
+- Docker documentation
+- Project structure details
+- Configuration examples
+- Real-world usage examples
+- FAQ section
+
+### Changelog (changelog.html)
+
+- Version-by-version breakdown
+- Feature additions
+- Bug fixes
+- Breaking changes
+- Improvement highlights
+- Color-coded sections
 
 ## 🌐 Deployment & SEO Tips
 

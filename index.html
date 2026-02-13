@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -111,7 +111,8 @@
         </div>
         <ul class="nav-links">
           <li><a href="#features">Features</a></li>
-          <li><a href="#installation">Install</a></li>
+          <li><a href="docs.html">Docs</a></li>
+          <li><a href="changelog.html">Changelog</a></li>
           <li><a href="#roadmap">Roadmap</a></li>
           <li>
             <a
@@ -133,8 +134,9 @@
           The fastest way to scaffold production-ready Node.js backends
         </h2>
         <p class="hero-description">
-          Zero configuration • TypeScript ready • Multiple databases •
-          Developer-friendly • Get from idea to coding in under 30 seconds
+          Zero configuration • TypeScript ready • Multiple databases • Docker
+          support • Fastify & Express • Get from idea to coding in under 30
+          seconds
         </p>
 
         <div class="code-example" role="img" aria-label="Installation command">
@@ -143,12 +145,12 @@
 
         <div class="cta-buttons">
           <a
-            href="#installation"
+            href="docs.html"
             class="btn btn-primary"
             aria-label="Start using create-node-spark"
           >
-            <i class="fas fa-download" aria-hidden="true"></i>
-            Get Started Now
+            <i class="fas fa-book" aria-hidden="true"></i>
+            Read Documentation
           </a>
           <a
             href="https://github.com/talhabilal-dev/create-node-spark"
@@ -160,6 +162,10 @@
             <i class="fab fa-github" aria-hidden="true"></i>
             View on GitHub
           </a>
+        </div>
+
+        <div style="margin-top: 2rem; font-size: 0.9rem; opacity: 0.9">
+          <strong>Latest Version: 2.7.1</strong> • Released February 13, 2026
         </div>
       </div>
     </section>
@@ -230,11 +236,29 @@
           </div>
 
           <div class="feature-card fade-in">
+            <div class="feature-icon">�</div>
+            <h3 class="feature-title">Docker Ready</h3>
+            <p class="feature-description">
+              Full Docker support with multi-stage builds, docker-compose, and
+              database containers.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">Fastify Support</h3>
+            <p class="feature-description">
+              Choose Express or Fastify - high-performance framework with
+              built-in validation and logging.
+            </p>
+          </div>
+
+          <div class="feature-card fade-in">
             <div class="feature-icon">🗄️</div>
             <h3 class="feature-title">Database Ready</h3>
             <p class="feature-description">
-              MongoDB with Mongoose, MySQL with Knex.js, and PostgreSQL with
-              Prisma support.
+              MongoDB with Mongoose, MySQL with Knex.js, or PostgreSQL with
+              Prisma ORM support.
             </p>
           </div>
 
@@ -273,7 +297,7 @@
           </div>
           <div class="stat-item fade-in">
             <span class="stat-number" data-target="2">0</span>
-            <span class="stat-label">Languages Supported</span>
+            <span class="stat-label">Frameworks</span>
           </div>
           <div class="stat-item fade-in">
             <span class="stat-number" data-target="100">0</span>
@@ -300,39 +324,54 @@
             <div class="phase-item">✅ JavaScript & TypeScript Support</div>
             <div class="phase-item">✅ npm & pnpm Package Managers</div>
             <div class="phase-item">✅ Express.js Framework</div>
+            <div class="phase-item">✅ Fastify Framework</div>
             <div class="phase-item">✅ MongoDB & MySQL Integration</div>
+            <div class="phase-item">✅ PostgreSQL + Prisma ORM</div>
+            <div class="phase-item">✅ Docker Containerization</div>
             <div class="phase-item">✅ ESLint & Prettier Setup</div>
             <div class="phase-item">✅ Multer File Upload</div>
+            <div class="phase-item">✅ CLI Flags System</div>
             <div class="phase-item">✅ ESM Module Support</div>
             <div class="phase-item">✅ Environment Configuration</div>
-            <div class="phase-item">✅ PostgreSQL + Prisma Integration</div>
-            <div class="phase-item">✅ Fastify Framework Support</div>
           </div>
         </div>
 
         <div class="phase phase-progress fade-in">
           <h3 class="phase-title">
             <i class="fas fa-cog fa-spin"></i>
-            Phase 2 - IN PROGRESS
+            Phase 2 - IN PROGRESS (50%)
           </h3>
           <div class="phase-items">
             <div class="phase-item">🔄 Enhanced Project Customization</div>
             <div class="phase-item">🔄 Template System</div>
-            <div class="phase-item">🔄 Automated Testing Setup</div>
+            <div class="phase-item">
+              📋 Automated Testing Setup (Jest/Vitest)
+            </div>
+            <div class="phase-item">
+              📋 Authentication Templates (JWT, OAuth)
+            </div>
+            <div class="phase-item">📋 API Documentation (Swagger/OpenAPI)</div>
           </div>
         </div>
 
         <div class="phase phase-planned fade-in">
           <h3 class="phase-title">
             <i class="fas fa-rocket"></i>
-            Phase 3 - PLANNED
+            Phase 3 - PLANNED (Q3-Q4 2025)
           </h3>
           <div class="phase-items">
             <div class="phase-item">📋 GraphQL API Support</div>
-            <div class="phase-item">🐳 Docker Integration</div>
-            <div class="phase-item">🔄 CI/CD Templates</div>
-            <div class="phase-item">🔌 Plugin System</div>
-            <div class="phase-item">🏗️ Industry Templates</div>
+            <div class="phase-item">📋 Kubernetes Configurations</div>
+            <div class="phase-item">
+              📋 CI/CD Templates (GitHub Actions, GitLab)
+            </div>
+            <div class="phase-item">📋 Plugin System</div>
+            <div class="phase-item">
+              📋 Industry Templates (E-commerce, Social, CMS)
+            </div>
+            <div class="phase-item">📋 Microservices Architecture</div>
+            <div class="phase-item">📋 Message Queues (Redis, RabbitMQ)</div>
+            <div class="phase-item">📋 Cloud Deployment Templates</div>
           </div>
         </div>
       </div>
@@ -342,13 +381,13 @@
     <section class="installation" id="installation">
       <div class="container">
         <h2 class="section-title fade-in" style="color: white">
-          📦 Installation Methods
+          📦 Quick Start
         </h2>
         <p
           class="section-subtitle fade-in"
           style="color: rgba(255, 255, 255, 0.8)"
         >
-          Choose the installation method that works best for you
+          Three simple ways to get started - choose what works best for you
         </p>
 
         <div class="installation-methods">
@@ -381,21 +420,307 @@
           </div>
 
           <div class="method-card fade-in">
-            <h3 class="method-title">🔧 Development Setup</h3>
+            <h3 class="method-title">⚡ Full Automation</h3>
             <div class="method-code">
               <button class="copy-btn" onclick="copyCode(this)">Copy</button>
               <code
-                >git clone
-                https://github.com/talhabilal-dev/create-node-spark.git<br />cd
-                create-node-spark<br />npm install && npm link</code
+                >npx create-node-spark my-api --lang ts --framework express --db
+                mongodb --docker --yes</code
               >
             </div>
             <p>
-              ✅ Full source code access<br />
-              ✅ Contributing ready<br />
-              ✅ Latest development features
+              ✅ Use CLI flags for full automation<br />
+              ✅ Perfect for CI/CD pipelines<br />
+              ✅ Skip all prompts instantly
             </p>
           </div>
+        </div>
+
+        <div style="margin-top: 3rem; text-align: center">
+          <a
+            href="docs.html"
+            class="btn btn-primary"
+            style="display: inline-flex; align-items: center; gap: 0.5rem"
+          >
+            <i class="fas fa-book"></i>
+            View Complete Documentation
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLI Flags Section -->
+    <section class="features" style="background: #f8fafc">
+      <div class="container">
+        <h2 class="section-title fade-in">🚩 Powerful CLI Flags</h2>
+        <p class="section-subtitle fade-in">
+          Use command-line flags for full automation or mix with interactive
+          prompts for flexibility
+        </p>
+
+        <div
+          style="
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            margin-bottom: 3rem;
+          "
+        >
+          <h3 style="text-align: center; margin-bottom: 2rem; color: #667eea">
+            Common Flag Examples
+          </h3>
+
+          <div style="display: grid; gap: 1.5rem">
+            <div
+              style="
+                background: #f7fafc;
+                padding: 1.5rem;
+                border-radius: 10px;
+                border-left: 4px solid #48bb78;
+              "
+            >
+              <h4 style="color: #2d3748; margin-bottom: 0.5rem">
+                TypeScript + Express + MongoDB
+              </h4>
+              <div class="method-code">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code style="font-size: 0.9rem"
+                  >npx create-node-spark my-api --lang typescript --framework
+                  express --db mongodb --eslint --yes</code
+                >
+              </div>
+            </div>
+
+            <div
+              style="
+                background: #f7fafc;
+                padding: 1.5rem;
+                border-radius: 10px;
+                border-left: 4px solid #667eea;
+              "
+            >
+              <h4 style="color: #2d3748; margin-bottom: 0.5rem">
+                Fastify + PostgreSQL + Docker
+              </h4>
+              <div class="method-code">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code style="font-size: 0.9rem"
+                  >npx create-node-spark fast-api --lang ts --framework fastify
+                  --db postgresql --docker --yes</code
+                >
+              </div>
+            </div>
+
+            <div
+              style="
+                background: #f7fafc;
+                padding: 1.5rem;
+                border-radius: 10px;
+                border-left: 4px solid #ed8936;
+              "
+            >
+              <h4 style="color: #2d3748; margin-bottom: 0.5rem">
+                Full-Stack with File Uploads
+              </h4>
+              <div class="method-code">
+                <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                <code style="font-size: 0.9rem"
+                  >npx create-node-spark shop-api --lang typescript --framework
+                  express --db mysql --multer --docker --yes</code
+                >
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top: 2rem; text-align: center">
+            <p style="color: #718096; margin-bottom: 1rem">
+              Available Flags: <code>--lang</code>, <code>--framework</code>,
+              <code>--db</code>, <code>--pm</code>, <code>--eslint</code>,
+              <code>--multer</code>, <code>--docker</code>, <code>--yes</code>,
+              <code>--verbose</code>, <code>--silent</code>
+            </p>
+            <a
+              href="docs.html#cli-flags"
+              style="color: #667eea; font-weight: 600; text-decoration: none"
+            >
+              View Complete Flags Reference →
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Docker Section -->
+    <section
+      class="features"
+      style="
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: white;
+      "
+    >
+      <div class="container">
+        <h2 class="section-title fade-in" style="color: white">
+          🐳 Docker Support
+        </h2>
+        <p
+          class="section-subtitle fade-in"
+          style="color: rgba(255, 255, 255, 0.9)"
+        >
+          Production-ready containerization with best practices built-in
+        </p>
+
+        <div class="features-grid">
+          <div
+            class="feature-card fade-in"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              color: white;
+              border: 1px solid rgba(255, 255, 255, 0.2);
+            "
+          >
+            <div class="feature-icon">🏗️</div>
+            <h3 class="feature-title" style="color: white">
+              Multi-Stage Builds
+            </h3>
+            <p
+              class="feature-description"
+              style="color: rgba(255, 255, 255, 0.9)"
+            >
+              Optimized Dockerfile with multi-stage builds for minimal image
+              size and maximum security.
+            </p>
+          </div>
+
+          <div
+            class="feature-card fade-in"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              color: white;
+              border: 1px solid rgba(255, 255, 255, 0.2);
+            "
+          >
+            <div class="feature-icon">📦</div>
+            <h3 class="feature-title" style="color: white">Docker Compose</h3>
+            <p
+              class="feature-description"
+              style="color: rgba(255, 255, 255, 0.9)"
+            >
+              Full-stack orchestration with database containers, health checks,
+              and volume persistence.
+            </p>
+          </div>
+
+          <div
+            class="feature-card fade-in"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              color: white;
+              border: 1px solid rgba(255, 255, 255, 0.2);
+            "
+          >
+            <div class="feature-icon">🔄</div>
+            <h3 class="feature-title" style="color: white">
+              Hot Reload Dev Mode
+            </h3>
+            <p
+              class="feature-description"
+              style="color: rgba(255, 255, 255, 0.9)"
+            >
+              Dockerfile.dev with volume mounting for instant code updates
+              during development.
+            </p>
+          </div>
+
+          <div
+            class="feature-card fade-in"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              color: white;
+              border: 1px solid rgba(255, 255, 255, 0.2);
+            "
+          >
+            <div class="feature-icon">🔒</div>
+            <h3 class="feature-title" style="color: white">Security First</h3>
+            <p
+              class="feature-description"
+              style="color: rgba(255, 255, 255, 0.9)"
+            >
+              Non-root user execution, Alpine-based images, and proper
+              .dockerignore patterns.
+            </p>
+          </div>
+
+          <div
+            class="feature-card fade-in"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              color: white;
+              border: 1px solid rgba(255, 255, 255, 0.2);
+            "
+          >
+            <div class="feature-icon">💾</div>
+            <h3 class="feature-title" style="color: white">
+              Database Containers
+            </h3>
+            <p
+              class="feature-description"
+              style="color: rgba(255, 255, 255, 0.9)"
+            >
+              Automatic MongoDB, MySQL, or PostgreSQL containers with persistent
+              volumes.
+            </p>
+          </div>
+
+          <div
+            class="feature-card fade-in"
+            style="
+              background: rgba(255, 255, 255, 0.1);
+              backdrop-filter: blur(10px);
+              color: white;
+              border: 1px solid rgba(255, 255, 255, 0.2);
+            "
+          >
+            <div class="feature-icon">⚙️</div>
+            <h3 class="feature-title" style="color: white">Ready Scripts</h3>
+            <p
+              class="feature-description"
+              style="color: rgba(255, 255, 255, 0.9)"
+            >
+              Pre-configured npm scripts: docker:build, docker:run, docker:dev,
+              docker:up, docker:down.
+            </p>
+          </div>
+        </div>
+
+        <div style="margin-top: 3rem; text-align: center">
+          <div
+            class="method-code"
+            style="
+              background: rgba(0, 0, 0, 0.3);
+              max-width: 600px;
+              margin: 0 auto;
+            "
+          >
+            <button class="copy-btn-support" onclick="copyCode(this)">Copy</button>
+            <code style="color: white"
+              ># Enable Docker during setup <br> npx create-node-spark --docker <br>#
+              Start your containerized app npm run docker:up</code
+            >
+          </div>
+          <p style="margin-top: 2rem; opacity: 0.9">
+            <a
+              href="docs.html#docker"
+              style="color: white; text-decoration: underline; font-weight: 600"
+            >
+              Learn more about Docker support →
+            </a>
+          </p>
         </div>
       </div>
     </section>
@@ -485,6 +810,12 @@
             aria-label="create-node-spark npm package"
             >npm Package</a
           >
+          <a href="docs.html" aria-label="Complete documentation"
+            >Documentation</a
+          >
+          <a href="changelog.html" aria-label="Version history and changelog"
+            >Changelog</a
+          >
           <a
             href="https://github.com/talhabilal-dev/create-node-spark/issues"
             target="_blank"
@@ -503,13 +834,6 @@
             href="mailto:contact@talhabilal.dev"
             aria-label="Contact create-node-spark developer"
             >Contact</a
-          >
-          <a
-            href="https://github.com/talhabilal-dev/create-node-spark/blob/main/CHANGELOG.md"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label="View changelog"
-            >Changelog</a
           >
         </div>
         <p>
